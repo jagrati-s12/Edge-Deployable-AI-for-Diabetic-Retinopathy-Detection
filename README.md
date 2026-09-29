@@ -140,9 +140,3 @@ To deploy on edge devices like the Raspberry Pi 4:
 1. Export model weights to **PyTorch INT8 Quantized Format** (`torch.quantization.quantize_dynamic`).
 2. Run `api.py` with `uvicorn` using `Gunicorn` or directly in a lightweight Docker container.
 3. The INT8 model reduces memory footprint from **75 MB to ~19 MB** with sub-500ms response times.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
