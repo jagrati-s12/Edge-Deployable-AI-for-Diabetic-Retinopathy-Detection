@@ -1,0 +1,86 @@
+# .gitignore for Edge-Deployable DR Detection Project
+# Protects sensitive files and keeps the repo clean
+
+# ── SENSITIVE FILES — NEVER PUSH ─────────────────────────────────────────────
+conference_paper.html
+conference_paper.tex
+Diabetic\ Retinopathy\ (1).docx
+*.docx
+*.doc
+
+# ── PYTHON ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# ── VIRTUAL ENVIRONMENTS ──────────────────────────────────────────────────────
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ── MODEL WEIGHTS (large binary files — store with Git LFS or separately) ─────
+checkpoints/
+*.pth
+*.pt
+*.onnx
+*.tflite
+*.pb
+*.h5
+*.pkl
+
+# ── DATA (large; store separately) ────────────────────────────────────────────
+data/
+datasets/
+*.csv
+*.json
+!requirements*.json
+
+# ── JUPYTER NOTEBOOKS (optional: uncomment to ignore) ─────────────────────────
+# notebooks/
+# *.ipynb
+
+# ── LOGS AND METRICS ──────────────────────────────────────────────────────────
+logs/
+runs/
+*.log
+metrics.json
+training_history.png
+*.png
+*.jpg
+*.jpeg
+!assets/
+
+# ── OS FILES ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── EDITOR FILES ──────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── MISC ──────────────────────────────────────────────────────────────────────
+.cache/
+tmp/
+temp/
